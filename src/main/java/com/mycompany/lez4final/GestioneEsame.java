@@ -11,14 +11,16 @@ public class GestioneEsame {
 
     static String nomeEsame;
     static int listaVoti[];
-    static String[] listaCognomi;
+    public static String[] listaCognomi;
     static String[] listaNomi;
 
     public static void main(String[] args) {
+        
         // fase 1
         preparaEsame();
         // fase 2
         sessioneEsame();
+        Utils.ordinaAlf();
         // fase 3
         correzioneEsami();
 
@@ -39,8 +41,8 @@ public class GestioneEsame {
     private static void sessioneEsame() {
         //carico il registro
         for (int i = 0; i < listaCognomi.length; i++) {
-            listaCognomi[i] = Utils.toUpp(JOptionPane.showInputDialog("cognome: " + (i + 1) + " di " + listaCognomi.length));
             listaNomi[i] = Utils.toUpp(JOptionPane.showInputDialog("nome:"));
+            listaCognomi[i] = Utils.toUpp(JOptionPane.showInputDialog("cognome: " + (i + 1) + " di " + listaCognomi.length));
 
         }
 
