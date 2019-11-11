@@ -12,7 +12,16 @@ import javax.swing.JOptionPane;
  * @author tss
  */
 public class Utils {
-
+    static String toUpp(String parola){
+        String ris="";
+        String first=parola.substring(0, 1).toUpperCase();
+        String others=parola.substring(1, parola.length()).toLowerCase();
+        ris = first + others;
+        return ris;
+        
+    }
+        
+    
     static int AskInt(String ask) {
         String strInt;
         int ris = 0;

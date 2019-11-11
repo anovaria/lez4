@@ -39,8 +39,8 @@ public class GestioneEsame {
     private static void sessioneEsame() {
         //carico il registro
         for (int i = 0; i < listaCognomi.length; i++) {
-            listaCognomi[i] = JOptionPane.showInputDialog("cognome: " + (i + 1) + " di " + listaCognomi.length);
-            listaNomi[i] = JOptionPane.showInputDialog("nome:");
+            listaCognomi[i] = Utils.toUpp(JOptionPane.showInputDialog("cognome: " + (i + 1) + " di " + listaCognomi.length));
+            listaNomi[i] = Utils.toUpp(JOptionPane.showInputDialog("nome:"));
 
         }
 
