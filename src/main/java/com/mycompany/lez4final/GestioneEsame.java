@@ -2,10 +2,7 @@ package com.mycompany.lez4final;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author tss
- */
+
 public class GestioneEsame {
 //Attributi della classe
 
@@ -62,7 +59,7 @@ public class GestioneEsame {
         for (int i = 0; i < listaCognomi.length; i++) {
             msg = msg +  listaNomi[i] + " " + listaCognomi[i] + " voto: " + listaVoti[i]+"\n";
         }
-        JOptionPane.showInternalMessageDialog(null, msg);
+        JOptionPane.showMessageDialog(null, msg);
 
     }
 }
